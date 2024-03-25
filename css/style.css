@@ -1,0 +1,20 @@
+/* Importing the Google Font 'Open Sans' with weights 600 and 700 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+/* Styles for the section element */
+section {
+    display: flex; /* Using flexbox for layout */
+    font-family: "Open Sans", sans-serif; /* Setting font family */
+    flex-direction: column; /* Stacking child elements vertically */
+    justify-content: center; /* Centering child elements vertically */
+    align-items: center; /* Centering child elements horizontally */
+    border: 2px solid black; /* Adding border */
+    border-radius: 12px; /* Adding rounded corners */
+    padding: 12px; /* Adding padding */
+    background-color: aqua; /* Setting background color */
+}
+
+/* Styles for the form element */
+form {
+    margin: auto; /* Centering the form horizontally */
+}

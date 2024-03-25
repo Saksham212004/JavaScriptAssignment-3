@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+    <h1>Make your own Pizza</h1>
+    <div id="student"></div>
+    <form id="pizzaForm">
+        <label for="pizza_size">Select Pizza Size:</label><br>
+        <select name="pizza_size" id="pizza_size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="large">x-Large</option>
+            <option value="large">Party-Size</option>
+        </select><br>
+
+        <label id="toppings">Select Toppings:</label><br>
+        <input type="checkbox" name="toppings[]" value="Tomatos"> Tomatos<br>
+        <input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms<br>
+        <input type="checkbox" name="toppings[]" value="onions"> Onions<br>
+        <input type="checkbox" name="toppings[]" value="Paneer"> Paneer<br>
+        <input type="checkbox" name="toppings[]" value="olives"> olives<br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="19" value="1"><br>
+
+        <label for="delivery_address">Delivery Address:</label><br>
+        <textarea name="delivery_address" id="delivery_address" cols="30" rows="3"></textarea><br>
+
+        <input type="button" value="Place Order" onclick="processOrder()">
+    </form>
+    
+    <div id="orderDescription"></div>
+</section>
+</body>
+</html>
